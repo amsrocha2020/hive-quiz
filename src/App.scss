@@ -1,0 +1,208 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  width: auto!important; 
+
+.quiz-app {
+  position: relative;
+  min-height: 100vh;
+
+  .header {
+    background-color: #223;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+
+    .logo {
+      width: 75px;
+    }
+
+    .title{
+      font-size: 40px;
+      margin-bottom: 15px;
+      margin-top: 0px;
+    }
+
+    .subTitle{
+      font-size: 14px;
+    }
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+  .container-quiz {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 140px;
+
+    .container {
+      background: #fff;
+      border-radius: 20px;
+    }
+
+    .questionCount {
+      text-align: left;
+      padding: 20px 40px 0px;
+      font-size: 14px;
+    }
+    .question {
+      h2 {
+        text-align: left;
+        padding: 10px 40px 20px;
+        margin: 0;
+      }
+    }
+    .answerOptions {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      
+      .answerOption {
+        border-top: 1px solid #eee;
+        
+        .radioCustomButton, 
+        .radioCustomLabel {
+          display: inline-block;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+        .radioCustomButton {
+          position: absolute;
+          width: auto;
+          opacity: 0;
+        }
+        .radioCustomLabel {
+          position: relative;
+          // width: 100%;
+          margin: 0;
+          padding: 1.5rem 2.5rem 1.5rem 5rem;
+          font-size: 16px;
+          line-height: 1.5;
+          text-align: left;
+       }
+       .radioCustomButton, .radioCustomLabel {
+          display: inline-block;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+       input[type="radio" i] {
+          background-color: initial;
+          cursor: default;
+          appearance: radio;
+          box-sizing: border-box;
+          margin: 3px 3px 0px 5px;
+          padding: initial;
+          border: initial;
+        }
+        .radioCustomButton~.radioCustomLabel:before {
+          position: absolute;
+          top: 20px;
+          left: 38px;
+          width: 28px;
+          height: 28px;
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          background: #fff;
+          border: 1px solid #bbb;
+          border-radius: 50%;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+       }
+       .radioCustomButton:checked~.radioCustomLabel:before {
+          content: '';
+          background: #8bc53f;
+          background-size: 27px;
+          border-color: #8bc53f;
+        }
+        .radioCustomButton.error:checked~.radioCustomLabel.error:before {
+          content: '';
+          background:red;
+          background-size: 27px;
+          border-color:red;
+        }
+      }
+    }
+  }
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #223;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    height: 140px;
+
+    a.author {
+      color: #61dafb;
+      text-decoration: none;
+    }
+    span.donate {  
+      display: inline-block;
+      margin: 20px;
+      position: relative;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .donate {
+      background: #00684d;
+      background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.4) 100%),
+                  -webkit-linear-gradient(left, lighten(#00684d, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
+      background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%),
+                  linear-gradient(to right, lighten(#00684d, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
+      background-position: 0 0;
+      background-size: 200% 100%;
+      border-radius: 4px;
+      color: #fff;
+      padding: 15px 65px 15px 15px;
+      text-shadow: 1px 1px 5px #666;
+      -webkit-transition: all 800ms;
+      transition: all 800ms;
+      
+      &:after {
+        border-left: 1px solid darken(#00684d, 5%);
+        color: darken(#00684d, 10%);
+        content: "\f004";
+        font: 20px "FontAwesome";
+        padding: 10px 0;
+        padding-left: 15px;
+        position: absolute;
+        right: 16px;
+        top: 7px;    
+        -webkit-transition: all 600ms 200ms;
+        transition: all 600ms 200ms;
+      }
+      
+      &:hover {
+        background-position: -100% 0;
+        
+        &:after {
+          border-left: 1px solid lighten(#00684d, 5%);
+          color: #fff;
+          text-shadow: 0 0 10px #000;
+        }
+      }
+    }
+  } 
+ }
+ .modal-thanks {
+  font-size: 21px;
+ }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-quiz {
+    width: 95% !important;
+    margin-top: 15px !important;
+    padding-bottom: 155px !important;
+  }
+}
