@@ -1,11 +1,13 @@
 import React from 'react';
+import { Alert } from 'react-bootstrap';
 
 const Result = ({ countCorrect, countIncorrect }) => {
   return (
     <div className="container">
-      <h2 className="text-center pb-5 pt-3">RESULTS</h2>
-      {countIncorrect !== 3 ? <p className="text-center text-success">Corrects: {countCorrect}</p> : null}
-      <p className="text-center text-danger">Incorrects: {countIncorrect}</p>
+      <h2 className="text-center pb-3 pt-3">RESULTS</h2>
+      {countIncorrect !== 3 ? 
+        <Alert className="text-center" variant="success">Corrects: {countCorrect}</Alert> : null}
+        <Alert className="text-center" variant="danger">Incorrects: {countIncorrect}</Alert>
       {countIncorrect === 0 ? 
         (
         <>
