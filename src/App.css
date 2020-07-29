@@ -207,8 +207,12 @@ body .quiz-app footer .donate:hover:after {
   text-shadow: 0 0 10px #000;
 }
 
-body .modal-thanks {
-  font-size: 21px;
+body .modal-header {
+  border-bottom: none;
+}
+
+body .img-congrats {
+  width: 100%;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

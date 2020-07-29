@@ -5,6 +5,7 @@ import QuestionCount from './Components/QuestionCount';
 import Quiz from './Components/Quiz';
 import Result from './Components/Result';
 import ModalDonation from './Components/ModalDonation';
+import ModalNextLevel from './Components/ModalNextLevel';
 
 import Logo from './logos/hive-logo.png';
 
@@ -15,6 +16,7 @@ function App() {
   const [userAnswer, setUserAnswer] = useState('');
   const [isCorrect, setIsCorrect] = useState(false);
   const [modalShow, setModalShow] = useState(false);
+  const [modalShowLevel, setModalShowLevel] = useState(false);
   const [countCorrect, setCountCorrect] = useState(0);
   const [countIncorrect, setCountIncorrect] = useState(0);
 
@@ -29,6 +31,7 @@ function App() {
         setIsCorrect(true);
         setCountCorrect(c => c + 1);
         setTimeout(() => {
+          if (dataQuiz[questionNumber].nextLevel === true) setModalShowLevel(true)
           setQuestionNumber(q => q + 1);
           setIsCorrect(false);
         }, 500);
@@ -62,6 +65,7 @@ function App() {
         <div>Made by <a className="author" href="https://hive.blog/@portugalcoin">@portugalcoin</a> with <i className="fa fa-heart"></i> for Hive Users</div>
       </footer>
       <ModalDonation show={modalShow} onHide={() => setModalShow(false)} />
+      { questionNumber <= dataQuiz.length - 1 ? <ModalNextLevel show={modalShowLevel} onHide={() => setModalShowLevel(false)} level={dataQuiz[questionNumber].level} /> : null }
   </div>
   );
 }
