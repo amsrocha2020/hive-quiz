@@ -17,7 +17,7 @@ const ModalNextLevel = (props) => {
         </Modal.Title> */}
       </Modal.Header>
       <Modal.Body className="text-center">
-        <h1>Next Level {props.level}</h1>
+        <h1>Level {props.level}</h1>
         <img className="img-congrats" src={Congrats} alt="Congrats Next Level" />
       </Modal.Body>
     </Modal>

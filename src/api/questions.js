@@ -114,6 +114,19 @@ const dataQuestions = [
     correct: "The primary token of the Hive Blockchain and often a reward on posts",
     questionId: "9",
     level: 3,
+    nextLevel: false
+  },
+  {
+    question: "What are curators?",
+    answers: [
+        "Views of your posts", 
+        "Users who comment on your posts", 
+        "Users who follow you", 
+        "Users who vote on your content"
+    ],
+    correct: "Users who vote on your content",
+    questionId: "10",
+    level: 3,
     nextLevel: true
   },
   {
@@ -125,7 +138,7 @@ const dataQuestions = [
         "Hive token locked in your hive wallet that give you influence and power to curate others in Hive Blockchain"
     ],
     correct: "Hive token locked in your hive wallet that give you influence and power to curate others in Hive Blockchain",
-    questionId: "10",
+    questionId: "11",
     level: 4,
     nextLevel: false
   },
@@ -138,7 +151,7 @@ const dataQuestions = [
         "Pay for HP"
     ],
     correct: "Lend HP to your account",
-    questionId: "11",
+    questionId: "12",
     level: 4,
     nextLevel: false
   },
@@ -151,7 +164,7 @@ const dataQuestions = [
         "Buy Hive on exchange"
     ],
     correct: "Transfer Liquid Hive to Hive Power",
-    questionId: "12",
+    questionId: "13",
     level: 4,
     nextLevel: true
   },
@@ -164,7 +177,7 @@ const dataQuestions = [
         "Buy Hive on exchange"
     ],
     correct: "Transfer Hive Power to Liquid Hive",
-    questionId: "13",
+    questionId: "14",
     level: 5,
     nextLevel: false
   },
@@ -177,7 +190,7 @@ const dataQuestions = [
         "15 days"
     ],
     correct: "7 days",
-    questionId: "14",
+    questionId: "15",
     level: 5,
     nextLevel: false
   },
@@ -190,7 +203,33 @@ const dataQuestions = [
         "Are all users"
     ],
     correct: "There is a server that runs one of the Hive nodes",
-    questionId: "15",
+    questionId: "16",
+    level: 5,
+    nextLevel: false
+  },
+  {
+    question: "How many votes can I give in a witness?",
+    answers: [
+        "1 vote", 
+        "3 votes", 
+        "10 votes", 
+        "The votes I want"
+    ],
+    correct: "1 vote",
+    questionId: "17",
+    level: 5,
+    nextLevel: false
+  },
+  {
+    question: "What is the top witness?",
+    answers: [
+        "Top 10", 
+        "Top 20", 
+        "Top 50", 
+        "Top 100"
+    ],
+    correct: "Top 20",
+    questionId: "18",
     level: 5,
     nextLevel: false
   },
@@ -203,7 +242,7 @@ const dataQuestions = [
         "Free"
     ],
     correct: "Free",
-    questionId: "16",
+    questionId: "19",
     level: 5,
     nextLevel: false
   }
