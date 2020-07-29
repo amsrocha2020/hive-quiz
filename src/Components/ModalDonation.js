@@ -7,6 +7,7 @@ const ModalDonation = (props) => {
       {...props}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
+      className="modal-donation"
       centered
     >
       <Modal.Header closeButton>

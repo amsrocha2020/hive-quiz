@@ -195,10 +195,28 @@ body {
     }
   } 
  }
- .modal-header {
-  border-bottom: none;
- }
- .img-congrats {
+ .modal-donation {
+   .modal-header {
+    border-bottom: none;
+    padding: 2rem 1rem;
+    .close {
+      margin: -2rem -1rem -1rem auto;
+    }
+   }
+   .modal-title {
+    width: 100%;
+    text-align: center;
+   }
+   .modal-body {
+    padding: 2rem 1rem;
+   }     
+  }
+  .modal-level {
+    .modal-header {
+      border-bottom: none;
+     }
+  }
+  .img-congrats {
    width: 100%;
  }
 }

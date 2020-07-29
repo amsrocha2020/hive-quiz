@@ -9,6 +9,7 @@ const ModalNextLevel = (props) => {
       {...props}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
+      className="modal-level"
       centered
     >
       <Modal.Header closeButton>

@@ -207,7 +207,25 @@ body .quiz-app footer .donate:hover:after {
   text-shadow: 0 0 10px #000;
 }
 
-body .modal-header {
+body .modal-donation .modal-header {
+  border-bottom: none;
+  padding: 2rem 1rem;
+}
+
+body .modal-donation .modal-header .close {
+  margin: -2rem -1rem -1rem auto;
+}
+
+body .modal-donation .modal-title {
+  width: 100%;
+  text-align: center;
+}
+
+body .modal-donation .modal-body {
+  padding: 2rem 1rem;
+}
+
+body .modal-level .modal-header {
   border-bottom: none;
 }
 

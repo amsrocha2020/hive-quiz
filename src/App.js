@@ -65,7 +65,10 @@ function App() {
         <div>Made by <a className="author" href="https://hive.blog/@portugalcoin">@portugalcoin</a> with <i className="fa fa-heart"></i> for Hive Users</div>
       </footer>
       <ModalDonation show={modalShow} onHide={() => setModalShow(false)} />
-      { questionNumber <= dataQuiz.length - 1 ? <ModalNextLevel show={modalShowLevel} onHide={() => setModalShowLevel(false)} level={dataQuiz[questionNumber].level} /> : null }
+      { questionNumber <= dataQuiz.length - 1 ? 
+        <ModalNextLevel show={modalShowLevel} onHide={() => setModalShowLevel(false)} level={dataQuiz[questionNumber].level} /> 
+        : null 
+      }
   </div>
   );
 }
