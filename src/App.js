@@ -51,7 +51,7 @@ function App() {
         <p className="subTitle">With this Quiz you will learn more about the Hive platform!</p>
       </div>
       <div className="container-quiz">
-          {(questionNumber !== dataQuiz.length && countIncorrect <= 2) ? 
+        {(questionNumber !== dataQuiz.length && countIncorrect <= 2) ? 
           (
             <div className="container">
               <QuestionCount currentQuestion={questionNumber + 1} total={dataQuiz.length} level={dataQuiz[questionNumber].level} />
@@ -61,7 +61,9 @@ function App() {
           : <Result countCorrect={countCorrect} countIncorrect={countIncorrect} />}
       </div>
       <footer>
-        <div><span className="donate" onClick={() => setModalShow(true)}>DONATE HIVE</span></div>
+        <div>
+          <span className="donate" onClick={() => setModalShow(true)}>DONATE HIVE</span>
+        </div>
         <div>Made by <a className="author" href="https://hive.blog/@portugalcoin">@portugalcoin</a> with <i className="fa fa-heart"></i> for Hive Users</div>
       </footer>
       <ModalDonation show={modalShow} onHide={() => setModalShow(false)} />
