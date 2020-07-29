@@ -48,10 +48,10 @@ function App() {
         <p className="subTitle">With this Quiz you will learn more about the Hive platform!</p>
       </div>
       <div className="container-quiz">
-          {(questionNumber !== dataQuiz.length) ? 
+          {(questionNumber !== dataQuiz.length && countIncorrect <= 2) ? 
           (
             <div className="container">
-              <QuestionCount currentQuestion={questionNumber + 1} total={dataQuiz.length} />
+              <QuestionCount currentQuestion={questionNumber + 1} total={dataQuiz.length} level={dataQuiz[questionNumber].level} />
               <Quiz content={dataQuiz[questionNumber]} onAnswerSelected={handleAnswerSelected} isCorrect={isCorrect}/>
             </div>
           )

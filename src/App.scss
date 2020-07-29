@@ -19,6 +19,7 @@ body {
 
     .logo {
       width: 75px;
+      height: 55px;
     }
 
     .title{
@@ -200,9 +201,21 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  
+  .header {
+    .title {
+      font-size: 30px !important;
+    }
+  }
+  
   .container-quiz {
     width: 95% !important;
     margin-top: 15px !important;
     padding-bottom: 155px !important;
+
+    h2 {
+      font-size: 21px;
+      line-height: 30px;
+    }
   }
 }

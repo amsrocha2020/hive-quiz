@@ -22,6 +22,7 @@ body .quiz-app .header {
 
 body .quiz-app .header .logo {
   width: 75px;
+  height: 55px;
 }
 
 body .quiz-app .header .title {
@@ -211,10 +212,17 @@ body .modal-thanks {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .header .title {
+    font-size: 30px !important;
+  }
   .container-quiz {
     width: 95% !important;
     margin-top: 15px !important;
     padding-bottom: 155px !important;
+  }
+  .container-quiz h2 {
+    font-size: 21px;
+    line-height: 30px;
   }
 }
 /*# sourceMappingURL=App.css.map */

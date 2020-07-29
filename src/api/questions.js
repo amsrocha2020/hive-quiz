@@ -1,14 +1,15 @@
 const dataQuestions = [
   {
-    question: "What is Hive Blockchain?",
+    question: "What can you do on the Hive Blockchain?",
     answers: [
-      "Social Blockchain",
-      "Game Blockchain",
-      "Chat Blockchain",
-      "F*ck I don´t know",
+      "Create content",
+      "Play Games",
+      "Socialize",
+      "The three above",
     ],
-    correct: "Social Blockchain",
+    correct: "The three above",
     questionId: "1",
+    level: 1
   }
   ,
   {
@@ -16,6 +17,7 @@ const dataQuestions = [
     answers: ["1 second", "3 seconds", "60 seconds", "360 seconds"],
     correct: "3 seconds",
     questionId: "2",
+    level: 1
   }
   ,
   {
@@ -29,6 +31,7 @@ const dataQuestions = [
     ],
     correct: "No. I can use the same keys and username on Hive.",
     questionId: "3",
+    level: 1
   }
   ,
   {
@@ -41,18 +44,21 @@ const dataQuestions = [
     ],
     correct: "https://signup.hive.io/",
     questionId: "4",
+    level: 2
   },
   {
     question: "How long does a free account take to be active?",
     answers: ["2 hours", "24 hours", "72 hours", "84 hours"],
     correct: "72 hours",
     questionId: "5",
+    level: 2
   },
   {
     question: "Can you do plagiarism?",
     answers: ["No", "Yes", "Maybe", "I don´t know"],
     correct: "No",
     questionId: "6",
+    level: 2
   },
   {
     question: "What should I do for the first post?",
@@ -64,6 +70,7 @@ const dataQuestions = [
     ],
     correct: "My presentation",
     questionId: "7",
+    level: 3
   },
   {
     question: "What tag should I use in my first Post?",
@@ -75,6 +82,7 @@ const dataQuestions = [
     ],
     correct: "#introduceyourself",
     questionId: "8",
+    level: 3
   },
   {
     question: "What is Hive Token (HIVE)?",
@@ -86,6 +94,7 @@ const dataQuestions = [
     ],
     correct: "The primary token of the Hive Blockchain and often a reward on posts",
     questionId: "9",
+    level: 3
   },
   {
     question: "What is Hive Power (HP)?",
@@ -97,6 +106,7 @@ const dataQuestions = [
     ],
     correct: "Valor 4",
     questionId: "10",
+    level: 4
   },
   {
     question: "What is a delegation on Hive?",
@@ -108,6 +118,7 @@ const dataQuestions = [
     ],
     correct: "Lend HP to your account",
     questionId: "11",
+    level: 4
   },
   {
     question: "What is Power Up?",
@@ -119,6 +130,7 @@ const dataQuestions = [
     ],
     correct: "Transfer Liquid Hive to Hive Power",
     questionId: "12",
+    level: 4
   },
   {
     question: "What is Power Down?",
@@ -130,6 +142,7 @@ const dataQuestions = [
     ],
     correct: "Transfer Hive Power to Liquid Hive",
     questionId: "13",
+    level: 5
   },
   {
     question: "How many days does it take to have Post Payout?",
@@ -141,6 +154,7 @@ const dataQuestions = [
     ],
     correct: "7 days",
     questionId: "14",
+    level: 5
   },
   {
     question: "What is a witness on Hive?",
@@ -152,6 +166,7 @@ const dataQuestions = [
     ],
     correct: "There is a server that runs one of the Hive nodes",
     questionId: "15",
+    level: 5
   },
   {
     question: "I pay fees for making a transfer to the exchange?",
@@ -163,6 +178,7 @@ const dataQuestions = [
     ],
     correct: "Free",
     questionId: "16",
+    level: 5
   }
   
 ];
