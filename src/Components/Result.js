@@ -11,7 +11,7 @@ import {
 
 const Result = ({ countCorrect, countIncorrect }) => {
   const url = 'http://hivequiz.tk';
-  const shareText = 'Check this site!';
+  const shareText = 'Hive Quiz Corrects: ' + countCorrect + " Incorrects: " +  countIncorrect;
 
   return (
     <div className="container">
@@ -27,7 +27,7 @@ const Result = ({ countCorrect, countIncorrect }) => {
           <p className="text-center">Tell your friends that you've learned more about Hive Blockchain</p>
           <div className="share-buttons pb-4">
             <FacebookShareButton url={url}>
-              <FacebookIcon size={32} round={true} />
+              <FacebookIcon size={32} round={true} shareText={shareText}/>
             </FacebookShareButton>
             <TwitterShareButton url={url} shareText={shareText}>
               <TwitterIcon size={32} round={true} />
