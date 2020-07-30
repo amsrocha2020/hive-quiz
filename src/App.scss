@@ -1,21 +1,28 @@
+$colorApp:#223;
+$background: #eee;
+
+
 body {
   position: relative;
   margin: 0;
   padding: 0;
-  background: #eee;
+  background: $background;
   font-family: sans-serif;
   overflow-x: hidden;
   width: auto!important; 
+  outline: 0;
 
 .quiz-app {
   position: relative;
   min-height: 100vh;
 
   .header {
-    background-color: #223;
+    background-color: $colorApp;
     padding: 20px;
     color: #fff;
     text-align: center;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(50,50,50,.2);
+    box-shadow: 0 4px 6px 0 rgba(50,50,50,.2);
 
     .logo {
       width: 75px;
@@ -146,7 +153,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #223;
+    background-color: $colorApp;
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
