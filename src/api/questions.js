@@ -23,8 +23,7 @@ const dataQuestions = [
   }
   ,
   {
-    question:
-      "If I already have an account with Steem do I need an account with Hive?",
+    question: "If I already have an account with Steem do I need an account with Hive?",
     answers: [
       "Yes.",
       "No. I can use the same keys and username on Hive.",
@@ -112,7 +111,7 @@ const dataQuestions = [
         "It is a community that shares the subject of tribes"
     ],
     correct: "#introduceyourself",
-    questionId: "8",
+    questionId: "9",
     level: 3,
     nextLevel: false
   },
@@ -125,7 +124,7 @@ const dataQuestions = [
         "Another Hive token which is often rewarded on posts"
     ],
     correct: "The primary token of the Hive Blockchain and often a reward on posts",
-    questionId: "9",
+    questionId: "10",
     level: 3,
     nextLevel: false
   },
@@ -138,7 +137,7 @@ const dataQuestions = [
         "Users who vote on your content"
     ],
     correct: "Users who vote on your content",
-    questionId: "10",
+    questionId: "11",
     level: 3,
     nextLevel: false
   },
@@ -151,7 +150,7 @@ const dataQuestions = [
         "Hive token locked in your hive wallet that give you influence and power to curate others in Hive Blockchain"
     ],
     correct: "Hive token locked in your hive wallet that give you influence and power to curate others in Hive Blockchain",
-    questionId: "11",
+    questionId: "12",
     level: 3,
     nextLevel: false
   },
@@ -164,7 +163,7 @@ const dataQuestions = [
         "Currency of the blockchain, liquid version"
     ],
     correct: "Hive Backed Dollar, $1 worth of Hive",
-    questionId: "11",
+    questionId: "13",
     level: 3,
     nextLevel: false
   },
@@ -177,7 +176,7 @@ const dataQuestions = [
         "Pay for HP"
     ],
     correct: "Lend HP to your account",
-    questionId: "12",
+    questionId: "14",
     level: 3,
     nextLevel: false
   },
@@ -190,7 +189,7 @@ const dataQuestions = [
         "Buy Hive on exchange"
     ],
     correct: "Transfer Liquid Hive to Hive Power",
-    questionId: "13",
+    questionId: "15",
     level: 3,
     nextLevel: false
   },
@@ -203,7 +202,7 @@ const dataQuestions = [
         "Buy Hive on exchange"
     ],
     correct: "Transfer Hive Power to Liquid Hive",
-    questionId: "14",
+    questionId: "16",
     level: 3,
     nextLevel: true
   },
@@ -216,7 +215,7 @@ const dataQuestions = [
         "15 days"
     ],
     correct: "7 days",
-    questionId: "15",
+    questionId: "17",
     level: 4,
     nextLevel: false
   },
@@ -229,7 +228,7 @@ const dataQuestions = [
         "Is the master key for the account and is required to change the other keys"
     ],
     correct: "Is the master key for the account and is required to change the other keys",
-    questionId: "15",
+    questionId: "18",
     level: 4,
     nextLevel: false
   },
@@ -242,7 +241,7 @@ const dataQuestions = [
         "Is the master key for the account and is required to change the other keys"
     ],
     correct: "Is used to make transfers and place orders in the internal market",
-    questionId: "15",
+    questionId: "19",
     level: 4,
     nextLevel: false
   },
@@ -255,7 +254,7 @@ const dataQuestions = [
         "Is the master key for the account and is required to change the other keys"
     ],
     correct: "Is to sign a transaction with account's auth",
-    questionId: "15",
+    questionId: "20",
     level: 4,
     nextLevel: false
   },
@@ -268,9 +267,9 @@ const dataQuestions = [
         "It's just a centralized server with the Hive blockchain"
     ],
     correct: "A node is an instance of the Hive blockchain running on a server.",
-    questionId: "15",
+    questionId: "21",
     level: 4,
-    nextLevel: true
+    nextLevel: false
   },
   {
     question: "What is a witness on Hive?",
@@ -281,7 +280,7 @@ const dataQuestions = [
         "Are all users"
     ],
     correct: "There is a server that runs one of the Hive nodes",
-    questionId: "16",
+    questionId: "22",
     level: 4,
     nextLevel: false
   },
@@ -294,7 +293,7 @@ const dataQuestions = [
         "The votes I want"
     ],
     correct: "1 vote",
-    questionId: "17",
+    questionId: "23",
     level: 4,
     nextLevel: false
   },
@@ -307,7 +306,7 @@ const dataQuestions = [
         "Top 100"
     ],
     correct: "Top 20",
-    questionId: "18",
+    questionId: "24",
     level: 4,
     nextLevel: true
   },
@@ -320,7 +319,7 @@ const dataQuestions = [
         "Free"
     ],
     correct: "Free",
-    questionId: "19",
+    questionId: "25",
     level: 5,
     nextLevel: false
   },
@@ -333,7 +332,7 @@ const dataQuestions = [
         "A fixed amount of HIVE tokens that is given to all users"
     ],
     correct: "A fixed amount of HIVE tokens are allocated to the network reward fund",
-    questionId: "15",
+    questionId: "26",
     level: 5,
     nextLevel: false
   },
@@ -346,7 +345,7 @@ const dataQuestions = [
         "It is one of the largest communities in Hive"
     ],
     correct: "A fast-on-disk data store with an advanced caching layer, which minimizes latency when reading/writing to and from disk",
-    questionId: "15",
+    questionId: "27",
     level: 5,
     nextLevel: false
   }
