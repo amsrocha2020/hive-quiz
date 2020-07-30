@@ -75,7 +75,7 @@ const dataQuestions = [
     correct: "No",
     questionId: "6",
     level: 2,
-    nextLevel: true
+    nextLevel: false
   },
   {
     question: "What should I do for the first post?",
@@ -87,7 +87,7 @@ const dataQuestions = [
     ],
     correct: "My presentation",
     questionId: "7",
-    level: 3,
+    level: 2,
     nextLevel: false
   },
   {
@@ -97,6 +97,19 @@ const dataQuestions = [
         "#hive", 
         "#introduceyourself", 
         "#introducemyself"
+    ],
+    correct: "#introduceyourself",
+    questionId: "8",
+    level: 2,
+    nextLevel: true
+  },
+  {
+    question: "What is a tribe?",
+    answers: [
+        "It is a group of users with a low reputation", 
+        "It is a community that creates content on a topic", 
+        "It is a group of users with a high reputation", 
+        "It is a community that shares the subject of tribes"
     ],
     correct: "#introduceyourself",
     questionId: "8",
@@ -127,7 +140,7 @@ const dataQuestions = [
     correct: "Users who vote on your content",
     questionId: "10",
     level: 3,
-    nextLevel: true
+    nextLevel: false
   },
   {
     question: "What is Hive Power (HP)?",
@@ -139,7 +152,20 @@ const dataQuestions = [
     ],
     correct: "Hive token locked in your hive wallet that give you influence and power to curate others in Hive Blockchain",
     questionId: "11",
-    level: 4,
+    level: 3,
+    nextLevel: false
+  },
+  {
+    question: "What is HBD?",
+    answers: [
+        "A community token on the Hive platform", 
+        "Hive Backed Dollar, $1 worth of Hive", 
+        "Locked version of HIVE which gives account influence on the platform", 
+        "Currency of the blockchain, liquid version"
+    ],
+    correct: "Hive Backed Dollar, $1 worth of Hive",
+    questionId: "11",
+    level: 3,
     nextLevel: false
   },
   {
@@ -152,7 +178,7 @@ const dataQuestions = [
     ],
     correct: "Lend HP to your account",
     questionId: "12",
-    level: 4,
+    level: 3,
     nextLevel: false
   },
   {
@@ -165,8 +191,8 @@ const dataQuestions = [
     ],
     correct: "Transfer Liquid Hive to Hive Power",
     questionId: "13",
-    level: 4,
-    nextLevel: true
+    level: 3,
+    nextLevel: false
   },
   {
     question: "What is Power Down?",
@@ -178,8 +204,8 @@ const dataQuestions = [
     ],
     correct: "Transfer Hive Power to Liquid Hive",
     questionId: "14",
-    level: 5,
-    nextLevel: false
+    level: 3,
+    nextLevel: true
   },
   {
     question: "How many days does it take to have Post Payout?",
@@ -191,8 +217,60 @@ const dataQuestions = [
     ],
     correct: "7 days",
     questionId: "15",
-    level: 5,
+    level: 4,
     nextLevel: false
+  },
+  {
+    question: "What is the owner key?",
+    answers: [
+        "The key to making transfers", 
+        "The key to giving to anyone", 
+        "The key for place orders in the internal market", 
+        "Is the master key for the account and is required to change the other keys"
+    ],
+    correct: "Is the master key for the account and is required to change the other keys",
+    questionId: "15",
+    level: 4,
+    nextLevel: false
+  },
+  {
+    question: "What is the active key?",
+    answers: [
+        "The key to making transfers", 
+        "Is used to make transfers and place orders in the internal market", 
+        "The key for me to log into the Hive Platform", 
+        "Is the master key for the account and is required to change the other keys"
+    ],
+    correct: "Is used to make transfers and place orders in the internal market",
+    questionId: "15",
+    level: 4,
+    nextLevel: false
+  },
+  {
+    question: "What is the private key?",
+    answers: [
+        "The key to making transfers", 
+        "Is used to make transfers and place orders in the internal market", 
+        "Is to sign a transaction with account's auth", 
+        "Is the master key for the account and is required to change the other keys"
+    ],
+    correct: "Is to sign a transaction with account's auth",
+    questionId: "15",
+    level: 4,
+    nextLevel: false
+  },
+  {
+    question: "What is a node?",
+    answers: [
+        "Process to release protocol/blockchain consensus upgrades", 
+        "A node is an instance of the Hive blockchain running on a server.", 
+        "Process to release protocol/blockchain software improvements", 
+        "It's just a centralized server with the Hive blockchain"
+    ],
+    correct: "A node is an instance of the Hive blockchain running on a server.",
+    questionId: "15",
+    level: 4,
+    nextLevel: true
   },
   {
     question: "What is a witness on Hive?",
@@ -204,7 +282,7 @@ const dataQuestions = [
     ],
     correct: "There is a server that runs one of the Hive nodes",
     questionId: "16",
-    level: 5,
+    level: 4,
     nextLevel: false
   },
   {
@@ -217,7 +295,7 @@ const dataQuestions = [
     ],
     correct: "1 vote",
     questionId: "17",
-    level: 5,
+    level: 4,
     nextLevel: false
   },
   {
@@ -230,8 +308,8 @@ const dataQuestions = [
     ],
     correct: "Top 20",
     questionId: "18",
-    level: 5,
-    nextLevel: false
+    level: 4,
+    nextLevel: true
   },
   {
     question: "I pay fees for making a transfer to the exchange?",
@@ -243,6 +321,32 @@ const dataQuestions = [
     ],
     correct: "Free",
     questionId: "19",
+    level: 5,
+    nextLevel: false
+  },
+  {
+    question: "What is Reward Pool?",
+    answers: [
+        "Hive that is burnt", 
+        "User group with joint rewards", 
+        "A fixed amount of HIVE tokens are allocated to the network reward fund", 
+        "A fixed amount of HIVE tokens that is given to all users"
+    ],
+    correct: "A fixed amount of HIVE tokens are allocated to the network reward fund",
+    questionId: "15",
+    level: 5,
+    nextLevel: false
+  },
+  {
+    question: "What is RocksDB?",
+    answers: [
+        "It is a Rock band known throughout the Hive community", 
+        "A fast-on-disk data store with an advanced caching layer, which minimizes latency when reading/writing to and from disk", 
+        "Multi Index Rocksdb Adapter that updates the database backend of Hive from memory mapped files to a disk log-structured merge-tree implemented via the RocksDB library", 
+        "It is one of the largest communities in Hive"
+    ],
+    correct: "A fast-on-disk data store with an advanced caching layer, which minimizes latency when reading/writing to and from disk",
+    questionId: "15",
     level: 5,
     nextLevel: false
   }

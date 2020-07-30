@@ -13,12 +13,9 @@ const ModalNextLevel = (props) => {
       centered
     >
       <Modal.Header closeButton>
-        {/* <Modal.Title id="contained-modal-title-vcenter">
-          Level
-        </Modal.Title> */}
       </Modal.Header>
       <Modal.Body className="text-center">
-        <h1>Level {props.level}</h1>
+        <h1>LEVEL {props.level}</h1>
         <img className="img-congrats" src={Congrats} alt="Congrats Next Level" />
       </Modal.Body>
     </Modal>

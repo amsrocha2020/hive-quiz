@@ -6,7 +6,6 @@ import Quiz from './Components/Quiz';
 import Result from './Components/Result';
 import ModalDonation from './Components/ModalDonation';
 import ModalNextLevel from './Components/ModalNextLevel';
-
 import Logo from './logos/hive-logo.png';
 
 import './App.css';
@@ -48,14 +47,14 @@ function App() {
       <div className="header">
         <a href="/"><img className="logo" src={Logo} alt="logo hive"/></a>
         <p className="title">HIVE QUIZ</p>
-        <p className="subTitle">With this Quiz you will learn more about the Hive platform!</p>
+        <p className="subTitle">With this Quiz you will learn more about the Hive Blockchain!</p>
       </div>
       <div className="container-quiz">
         {(questionNumber !== dataQuiz.length && countIncorrect <= 2) ? 
           (
             <div className="container">
-              <QuestionCount currentQuestion={questionNumber + 1} total={dataQuiz.length} level={dataQuiz[questionNumber].level} />
-              <Quiz content={dataQuiz[questionNumber]} onAnswerSelected={handleAnswerSelected} isCorrect={isCorrect}/>
+                <QuestionCount currentQuestion={questionNumber + 1} total={dataQuiz.length} level={dataQuiz[questionNumber].level} />
+                <Quiz content={dataQuiz[questionNumber]} onAnswerSelected={handleAnswerSelected} isCorrect={isCorrect}/>
             </div>
           )
           : <Result countCorrect={countCorrect} countIncorrect={countIncorrect} />}
