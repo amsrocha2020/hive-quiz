@@ -285,11 +285,11 @@ const dataQuestions = [
     nextLevel: false
   },
   {
-    question: "How many votes can I give in a witness?",
+    question: "How many votes can I give to one witness?",
     answers: [
         "1 vote", 
         "3 votes", 
-        "10 votes", 
+        "30 votes", 
         "The votes I want"
     ],
     correct: "1 vote",

@@ -82,6 +82,10 @@ body .quiz-app .container-quiz .questionCount {
   font-size: 14px;
 }
 
+body .quiz-app .container-quiz .level {
+  margin-left: 40px;
+}
+
 body .quiz-app .container-quiz .question h2 {
   text-align: left;
   padding: 10px 40px 20px;
@@ -195,9 +199,9 @@ body .quiz-app footer span.donate {
 }
 
 body .quiz-app footer .donate {
-  background: #00684d;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), -webkit-gradient(linear, left top, right top, from(#00b586), color-stop(50%, #00684d), to(#00b586));
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(to right, #00b586 0%, #00684d 50%, #00b586 100%);
+  background: #e31337;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), -webkit-gradient(linear, left top, right top, from(#f1526d), color-stop(50%, #e31337), to(#f1526d));
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(to right, #f1526d 0%, #e31337 50%, #f1526d 100%);
   background-position: 0 0;
   background-size: 200% 100%;
   border-radius: 4px;
@@ -209,8 +213,8 @@ body .quiz-app footer .donate {
 }
 
 body .quiz-app footer .donate:after {
-  border-left: 1px solid #004f3a;
-  color: #003527;
+  border-left: 1px solid #cb1131;
+  color: #560715;
   content: "\f004";
   font: 20px "FontAwesome";
   padding: 10px 0;
@@ -227,7 +231,7 @@ body .quiz-app footer .donate:hover {
 }
 
 body .quiz-app footer .donate:hover:after {
-  border-left: 1px solid #008260;
+  border-left: 1px solid #ed2346;
   color: #fff;
   text-shadow: 0 0 10px #000;
 }
