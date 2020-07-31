@@ -348,7 +348,48 @@ const dataQuestions = [
     questionId: "27",
     level: 5,
     nextLevel: false
+  },
+  {
+    question: "Can I delete or deactivate my account?",
+    answers: [
+        "Yes, in the settings you can delete your account", 
+        "No, you have to make a request to the Hive community", 
+        "Accounts can be deleted with the active key", 
+        "Accounts can not be deactivated or deleted"
+    ],
+    correct: "Accounts can not be deactivated or deleted",
+    questionId: "28",
+    level: 5,
+    nextLevel: false
+  },
+  {
+    question: "Can I change my username?",
+    answers: [
+        "Account names can not be changed", 
+        "No, you have to make a request to the Hive community", 
+        "The username can be changed with an active key", 
+        "Yes, in the settings you can change your username"
+    ],
+    correct: "Account names can not be changed",
+    questionId: "29",
+    level: 5,
+    nextLevel: false
+  },
+  {
+    question: "How many tags can I use?",
+    answers: [
+        "1", 
+        "5", 
+        "8", 
+        "10"
+    ],
+    correct: "8",
+    questionId: "30",
+    level: 5,
+    nextLevel: false
   }
+  
+
   
 ];
 
