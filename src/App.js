@@ -70,7 +70,7 @@ function App() {
           <img className="logo" src={Logo} alt="logo hive" />
         </a>
         <p className="title">HIVE QUIZ</p>
-        <p className="subTitle">With this Quiz you will learn more about the Hive Blockchain!</p>
+        <p className="subTitle d-none d-sm-block">With this Quiz you will learn more about the Hive Blockchain!</p>
       </div>
       <div className="container-quiz">
         {(questionNumber !== dataQuiz.length && countIncorrect <= 2 && counter > 0) ? 
