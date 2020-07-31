@@ -9,37 +9,50 @@ import {
   TelegramIcon,
 } from "react-share";
 
-const Result = ({ countCorrect, countIncorrect }) => {
-  const url = 'http://hivequiz.tk';
-  const shareText = 'Hive Quiz Corrects: ' + countCorrect + " Incorrects: " +  countIncorrect;
+const Result = ({ countCorrect, countIncorrect, counter, complete }) => {
+  const url = 'http://hivequiz.me';
+  const shareText = 'Hive Quiz - Corrects: ' + countCorrect + " Incorrects: " +  countIncorrect;
 
   return (
     <div className="container">
       <div className="results pt-4">
-      {countIncorrect !== 3 ? 
-        <Alert className="text-center" variant="success">Corrects: {countCorrect}</Alert> : null}
-        <Alert className="text-center" variant="danger">Incorrects: {countIncorrect}</Alert>
+      {countIncorrect !== 3 && counter !== 0 ? 
+        <Alert className="text-center" variant="success">Corrects: {countCorrect}</Alert> 
+      : 
+        null
+      }
+      {counter !== 0 ? <Alert className="text-center" variant="danger">Incorrects: {countIncorrect}</Alert> : null }
       </div>
-      {countIncorrect === 0 ? 
+      {countIncorrect === 0 && complete ? 
         (
         <>
           <h3 className="text-center pt-3">Congratulations! Perfect!</h3>
           <p className="text-center">Tell your friends that you've learned more about Hive Blockchain</p>
           <div className="share-buttons pb-4">
-            <FacebookShareButton url={url}>
-              <FacebookIcon size={32} round={true} shareText={shareText}/>
+            <FacebookShareButton 
+              url={url}
+              quote={shareText}
+              hashtag="#hive"
+            >
+            <FacebookIcon size={32} round={true} />
             </FacebookShareButton>
-            <TwitterShareButton url={url} shareText={shareText}>
+            <TwitterShareButton 
+              url={url} 
+              title={shareText}
+              hashtag="#hive"
+            >
               <TwitterIcon size={32} round={true} />
             </TwitterShareButton>
-            <TelegramShareButton url={url} shareText={shareText}>
+            <TelegramShareButton 
+              url={url} 
+              title={shareText}>
               <TelegramIcon size={32} round={true} />
             </TelegramShareButton>
           </div>
         </>
         )
         : 
-        (countIncorrect === 3 ?
+        (countIncorrect === 3 || counter === 0 ?
         (
         <>
           <div className="text-center pb-3 pt-3">
@@ -47,24 +60,34 @@ const Result = ({ countCorrect, countIncorrect }) => {
             <a className="btn btn-success" href="/" rel="nofollow noopener noreferrer">TRY AGAIN</a>
           </div>
         </>
-        ) : 
-        (
-        <>
+        ) 
+        : 
+        ( <>
           <h3 className="text-center pt-3">Congratulations!</h3>
           <p className="text-center">Tell your friends that you've learned more about Hive Blockchain</p>
           <div className="share-buttons pb-4">
-            <FacebookShareButton url={url}>
-              <FacebookIcon size={32} round={true} />
+            <FacebookShareButton 
+              url={url}
+              quote={shareText}
+              hashtag="#hive"
+            >
+            <FacebookIcon size={32} round={true} />
             </FacebookShareButton>
-            <TwitterShareButton url={url} shareText={shareText}>
+            <TwitterShareButton 
+              url={url} 
+              title={shareText}
+              hashtag="#hive"
+            >
               <TwitterIcon size={32} round={true} />
             </TwitterShareButton>
-            <TelegramShareButton url={url} shareText={shareText}>
+            <TelegramShareButton 
+              url={url} 
+              title={shareText}>
               <TelegramIcon size={32} round={true} />
             </TelegramShareButton>
           </div>
         </>)
-        )}
+       )}
     </div>
   )
 }
