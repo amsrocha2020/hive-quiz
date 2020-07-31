@@ -67,7 +67,7 @@ body .quiz-app .container-quiz .countDown .count {
 }
 
 body .quiz-app .container-quiz .countDown .count.danger {
-  background: red;
+  background: #e31337;
 }
 
 body .quiz-app .container-quiz .container {
