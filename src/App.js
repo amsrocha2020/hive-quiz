@@ -27,7 +27,7 @@ function App() {
   }
 
   useEffect(() => {
-    countIncorrect === 2 && setIsActive(false);
+    countIncorrect === 3 && setIsActive(false);
   }, [countIncorrect])
 
   useEffect(() => {
