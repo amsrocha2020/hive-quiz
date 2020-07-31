@@ -75,19 +75,26 @@ function App() {
       <div className="container-quiz">
         {(questionNumber !== dataQuiz.length && countIncorrect <= 2 && counter > 0) ? 
           (
+          <>
             <div className="container">
                 <QuestionCount 
                   currentQuestion={questionNumber + 1} 
                   total={dataQuiz.length} 
                   level={dataQuiz[questionNumber].level} 
                 />
+                <div className="countDown mt-2 mr-3">
+                  <div className={"count " + (counter < 10 ? 'danger' : '')}>{counter} second(s)</div>
+               </div>
                 <Quiz 
                   content={dataQuiz[questionNumber]} 
                   onAnswerSelected={handleAnswerSelected} 
                   isCorrect={isCorrect}
                 />
-                <div>Countdown: {counter} second(s)</div>
             </div>
+          {/* <div className="countDown mt-2">
+            <div className="count">Countdown: {counter} second(s)</div>
+          </div> */}
+          </>
           )
           : <Result 
               countCorrect={countCorrect} 

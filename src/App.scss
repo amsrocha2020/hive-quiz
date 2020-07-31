@@ -51,9 +51,28 @@ body {
     margin-top: 10px;
     padding-bottom: 140px;
 
+    .countDown {
+      text-align: center;
+      right: 0;
+      font-size: 12px;
+      position: absolute;
+      top: 15px;
+      .count {
+        background: #28a745;
+        display: inline;
+        padding: 10px;
+        color: #fff;
+        border-radius: 15px;
+      }
+      .count.danger {
+        background: red;
+      }
+    }
+
     .container {
       background: #fff;
       border-radius: 20px;
+      position: relative;
     }
 
     .questionCount {

@@ -50,9 +50,30 @@ body .quiz-app .container-quiz {
   padding-bottom: 140px;
 }
 
+body .quiz-app .container-quiz .countDown {
+  text-align: center;
+  right: 0;
+  font-size: 12px;
+  position: absolute;
+  top: 15px;
+}
+
+body .quiz-app .container-quiz .countDown .count {
+  background: #28a745;
+  display: inline;
+  padding: 10px;
+  color: #fff;
+  border-radius: 15px;
+}
+
+body .quiz-app .container-quiz .countDown .count.danger {
+  background: red;
+}
+
 body .quiz-app .container-quiz .container {
   background: #fff;
   border-radius: 20px;
+  position: relative;
 }
 
 body .quiz-app .container-quiz .questionCount {
