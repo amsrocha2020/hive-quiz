@@ -42,6 +42,7 @@ function App() {
     setComplete(false);
     setUserAnswer('');
     setQuestionNumber(0);
+    setCounter(60);
   }
 
   useEffect(() => {
