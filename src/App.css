@@ -320,6 +320,12 @@ body .img-congrats {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    padding: 10px !important;
+  }
+  .header .logo {
+    width: 85px !important;
+  }
   .header .title {
     font-size: 30px !important;
   }
@@ -327,6 +333,13 @@ body .img-congrats {
     width: 95% !important;
     margin-top: 15px !important;
     padding-bottom: 155px !important;
+  }
+  .container-quiz .container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .container-quiz h1 {
+    font-size: 25px !important;
   }
   .container-quiz h2 {
     font-size: 21px;
