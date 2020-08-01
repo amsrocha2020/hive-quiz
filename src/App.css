@@ -38,6 +38,52 @@ body .quiz-app .header .subTitle {
   margin-bottom: 0px;
 }
 
+body .quiz-app .start-quiz {
+  padding: 40px;
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    -webkit-box-shadow: 0 0 3px #2ba805;
+            box-shadow: 0 0 3px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    -webkit-box-shadow: 0 0 10px #49e819;
+            box-shadow: 0 0 10px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    -webkit-box-shadow: 0 0 3px #2ba805;
+            box-shadow: 0 0 3px #2ba805;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    -webkit-box-shadow: 0 0 3px #2ba805;
+            box-shadow: 0 0 3px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    -webkit-box-shadow: 0 0 10px #49e819;
+            box-shadow: 0 0 10px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    -webkit-box-shadow: 0 0 3px #2ba805;
+            box-shadow: 0 0 3px #2ba805;
+  }
+}
+
+body .quiz-app .start-quiz .btn-start {
+  border: none;
+  -webkit-animation: glowing 1300ms infinite;
+          animation: glowing 1300ms infinite;
+}
+
 body .quiz-app .App-link {
   color: #61dafb;
 }
@@ -285,6 +331,9 @@ body .img-congrats {
   .container-quiz h2 {
     font-size: 21px;
     line-height: 30px;
+  }
+  .container-quiz .start-quiz {
+    padding: 10px !important;
   }
 }
 /*# sourceMappingURL=App.css.map */

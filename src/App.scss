@@ -41,6 +41,28 @@ body {
     }
   }
 
+  .start-quiz {
+    padding: 40px;
+    @keyframes glowing {
+      0% {
+        background-color: #2ba805;
+        box-shadow: 0 0 3px #2ba805;
+      }
+      50% {
+        background-color: #49e819;
+        box-shadow: 0 0 10px #49e819;
+      }
+      100% {
+        background-color: #2ba805;
+        box-shadow: 0 0 3px #2ba805;
+      }
+    }
+    .btn-start {
+      border: none;
+      animation: glowing 1300ms infinite;
+    }
+  }
+
   .App-link {
     color: #61dafb;
   }
@@ -195,12 +217,6 @@ body {
     }
     
     .donate {
-      // background: #00684d;
-      // background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.4) 100%),
-      //             -webkit-linear-gradient(left, lighten(#00684d, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
-      // background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%),
-      //             linear-gradient(to right, lighten(#00684d, 15%) 0%, #00684d 50%, lighten(#00684d, 15%) 100%);
-      
       background: #e31337;
       background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.4) 100%),
                   -webkit-linear-gradient(left, lighten(#e31337, 15%) 0%, #e31337 50%, lighten(#e31337, 15%) 100%);
@@ -216,8 +232,6 @@ body {
       transition: all 800ms;
       
       &:after {
-        // border-left: 1px solid darken(#00684d, 5%);
-        // color: darken(#00684d, 10%);
         border-left: 1px solid darken(#e31337, 5%);
         color: darken(#e31337, 30%);
         content: "\f004";
@@ -235,7 +249,6 @@ body {
         background-position: -100% 0;
         
         &:after {
-          // border-left: 1px solid lighten(#00684d, 5%);
           border-left: 1px solid lighten(#e31337, 5%);
           color: #fff;
           text-shadow: 0 0 10px #000;
@@ -257,9 +270,7 @@ body {
 }
 
  .modal-donation {
-
     .modal-content {
-
       .modal-header {
         border-bottom: none;
         padding: 2rem 1rem;
@@ -278,7 +289,6 @@ body {
   }
 
 .modal-level {
-
   .modal-header {
     border-bottom: none;
   }
@@ -305,6 +315,10 @@ body {
     h2 {
       font-size: 21px;
       line-height: 30px;
+    }
+
+    .start-quiz {
+      padding: 10px !important;
     }
   }
 }

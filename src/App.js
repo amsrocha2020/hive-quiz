@@ -6,6 +6,7 @@ import Quiz from './Components/Quiz';
 import Result from './Components/Result';
 import ModalDonation from './Components/ModalDonation';
 import ModalNextLevel from './Components/ModalNextLevel';
+import Start from './Components/Start';
 import Logo from './logos/quiz-logo.png';
 
 import './App.css';
@@ -20,10 +21,27 @@ function App() {
   const [countIncorrect, setCountIncorrect] = useState(0);
   const [complete, setComplete] = useState(false);
   const [counter, setCounter] = useState(60);
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
+  const [start, setStart] = useState(false);
 
   const handleAnswerSelected = (event) => {
     setUserAnswer(event.target.value);
+  }
+
+  const handleStart = () => {
+    console.log('start')
+    setIsActive(true);
+    setStart(true);
+  }
+
+  const handleTryAgain = () => {
+    setStart(true);
+    setIsActive(true);
+    setCountCorrect(0);
+    setCountIncorrect(0);
+    setComplete(false);
+    setUserAnswer('');
+    setQuestionNumber(0);
   }
 
   useEffect(() => {
@@ -69,11 +87,10 @@ function App() {
         <a href="/">
           <img className="logo" src={Logo} alt="logo hive" />
         </a>
-        {/* <p className="title">HIVE QUIZ</p> */}
         <p className="subTitle d-none d-sm-block">With this Quiz you will learn more about the Hive Blockchain!</p>
       </div>
       <div className="container-quiz">
-        {(questionNumber !== dataQuiz.length && countIncorrect <= 2 && counter > 0) ? 
+        {(start && questionNumber !== dataQuiz.length && countIncorrect <= 2 && counter > 0) ? 
           (
           <>
             <div className="container">
@@ -91,17 +108,18 @@ function App() {
                   isCorrect={isCorrect}
                 />
             </div>
-          {/* <div className="countDown mt-2">
-            <div className="count">Countdown: {counter} second(s)</div>
-          </div> */}
           </>
           )
-          : <Result 
+          : (start) ? 
+            (<Result 
               countCorrect={countCorrect} 
               countIncorrect={countIncorrect} 
               counter={counter} 
               complete={complete}
-            />
+              handleTryAgain={handleTryAgain}
+            />)
+          :
+          <Start  handleStart={handleStart}/>
         }
       </div>
       <footer>

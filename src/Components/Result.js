@@ -9,7 +9,7 @@ import {
   TelegramIcon,
 } from "react-share";
 
-const Result = ({ countCorrect, countIncorrect, counter, complete }) => {
+const Result = ({ countCorrect, countIncorrect, counter, complete, handleTryAgain }) => {
   const url = 'http://hivequiz.me';
   const shareText = 'Hive Quiz - Corrects: ' + countCorrect + " Incorrects: " +  countIncorrect;
 
@@ -57,7 +57,7 @@ const Result = ({ countCorrect, countIncorrect, counter, complete }) => {
         <>
           <div className="text-center pb-3 pt-3">
             <p className="text-center">Oh no!!! You need to learn more about Hive Blockchain.</p>
-            <a className="btn btn-success" href="/" rel="nofollow noopener noreferrer">TRY AGAIN</a>
+            <button className="btn btn-success" onClick={handleTryAgain} rel="nofollow noopener noreferrer">TRY AGAIN!</button>
           </div>
         </>
         ) 
