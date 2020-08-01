@@ -376,7 +376,7 @@ const dataQuestions = [
     nextLevel: false
   },
   {
-    question: "How many tags can I use?",
+    question: "What's the good number of tags to use?",
     answers: [
         "1", 
         "5", 
